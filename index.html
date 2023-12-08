@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>GEMS</title>
+            <meta charset="UTF-8"/>
+            <link rel="stylesheet" href="style.css"/>
+            <link rel="shortcut icon" href="images/GEMS Icon 2.png" type="image/x-icon"/>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+            <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="">
+            <header>
+                <img src="images/GEMS Background 2.png" alt="sample image" class="background-image">
+                <h3 class="title">Homestead GEMS</h3>
+                <p class="title-description">GEMS (Girls Exploring Math and Science) encourages students, especially girls, to pursue careers and education in STEM disciplines.
+            </header>
+            <nav class="nav-bar" id="top-nav">
+                <ul>
+                    <li class="first-link"><a href="index.html">
+                        <i class="fa fa-home"></i>
+                    </a></li>
+                    <li><a href="events.html" class="link">EVENTS</a></li>
+                    <li><a href="resources.html" class="link">RESOURCES</a></li>
+                    <li><a href="https://hhsclubwebsites.github.io/clubdirectory/" class="link">BACK TO DIRECTORY</a></li>
+                    <li class="last-link"><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="space"></div>
+            <div class="space"></div>
+            <div class="flow">
+            <div class="overview">
+                <!-- <div class="grid"> -->
+                    <div class="flow">
+                        <h3 class="header">
+                            What is GEMS?
+                        </h3>
+                        <div class="description">
+                            <p>
+                            GEMS hosts meetings every 3 weeks that are usually 45 minutes long.
+                            These meetings involve activities such as the annual GEMSgiving and GEMS Boat Races!
+                            Check out we're up to in the <a href="events.html" class="linky-link">Events</a> tab.
+
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <div class="flow">
+                        <div class="image">
+                            <img src="images/mathteam_nsc_varsity.jpg" alt="sample image">
+                        </div>
+                    </div> -->
+                <!-- </div> -->
+            </div>
+            </div>
+
+            <div class="space"></div>
+
+            <div class="flow">
+            <div class="overview">
+                <!-- <div class="grid"> -->
+                    <div class="flow">
+                        <h3 class="header">
+                            How do I join?
+                        </h3>
+                        <div class="description">
+                            <p>
+                            To join GEMS, answer the Google Form in the announcements, on slideshows, and 
+                            on posters. Or, contact the club leaders below.
+
+                            </p>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+            </div>
+            <div class="space"></div>
+
+            <div class="contact">
+                <div class="flex">
+                    <div class="header2">
+                        <h3>
+                            Contact
+                         </h3>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="contact-info">
+                        For more information, contact Mia Tsuchihashi at <a class="email-link" href="mailto:tsuchmi@students.mtsd.k12.wi.us">tsuchmi@students.mtsd.k12.wi.us</a>, Madeline Frank at <a class="email-link" href="mailto:frankma@students.mtsd.k12.wi.us">frankma@students.mtsd.k12.wi.us</a>
+                        , or Addie Farrell at <a class="email-link" href="mailto:farread@students.mtsd.k12.wi.us">farread@students.mtsd.k12.wi.us</a>. 
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="grid-footer">
+                    <div class="left-image">
+                        <a href="index.html"><img class="footer-image" src="images/GEMS Footer Icon.png"></a>
+                    </div>
+                    <div class="left">
+                        <p>Have any website design suggestions? Contact <a class="footer-link" href="mailto:hhsclubwebsites@gmail.com">hhsclubwebsites@gmail.com</a>.</p>
+                        <div class="icons">
+                            <p><a class="footer-link" href="https://icons8.com/icon/5vGNMY3d8lxd/gem-stone" target="_blank" rel="noopener noreferrer">Gemstone</a> icon by <a class="footer-link" href="https://icons8.com/" target="_blank" rel="noopener noreferrer">Icons8</a>.</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <!-- <div class="link-list"> -->
+                            <ul class="link-list">
+                                <li><a href="index.html" class="footer-list-link">HOME</a></li>
+                                <div class="footer-space"></div>
+                                <li><a href="events.html" class="footer-list-link">EVENTS</a></li>
+                                <div class="footer-space"></div>
+                                <li><a href="resources.html" class="footer-list-link">RESOURCES</a></li>
+                                <div class="footer-space"></div>
+                                <li><a href="https://hhsclubwebsites.github.io/clubdirectory/" class="footer-list-link">DIRECTORY</a></li>
+                            </ul>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </footer>
+
+            <script>
+                var x = document.getElementById("top-nav");
+                console.log(x);
+                console.log(x.className);
+                document.addEventListener('click', event => {
+                    if(event.target.closest('#top-nav') === null){
+                        x.className = "nav-bar";
+                    };
+                })
+            </script>
+
+        </div>
+    </body>
+</html>

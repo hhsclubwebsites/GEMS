@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>GEMS Resources</title>
+            <meta charset="UTF-8"/>
+            <link rel="stylesheet" href="resources.css">
+            <link rel="shortcut icon" href="images/GEMS Icon 2.png" type="image/x-icon"/>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+            <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="index.js"></script>
+    </head>
+    <body>
+            <header>
+                <img src="images/GEMS Background 2.png" alt="sample image" class="background-image">
+                <h3 class="title">Resources</h3>
+                <p class="title-description">
+                    Learn more about GEMS.
+                </p>
+            </header>
+            <nav class="nav-bar" id="top-nav">
+                <ul>
+                    <li class="first-link"><a href="index.html">
+                        <i class="fa fa-home"></i>
+                    </a></li>
+                    <li><a href="events.html" class="link">EVENTS</a></li>
+                    <li><a href="resources.html" class="link">RESOURCES</a></li>
+                    <li><a href="https://hhsclubwebsites.github.io/clubdirectory/" class="link">BACK TO DIRECTORY</a></li>
+                    <li class="last-link"><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a></li>
+                </ul>
+            </nav>
+            
+            <div class="space"></div>
+            <div class="flex-columns">
+                <button class="accordion">Social Media</button>
+                <div class="panel">
+                    <ul>
+                        <li><a class="listed-link" href="https://www.instagram.com/hhsgems/" target="_blank" rel="noopener noreferrer">Instagram (@hhsgems)</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- <div class="space"></div>
+            <div class="flex-columns">
+                <button class="accordion">Section 2</button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis a, nobis aperiam corrupti cupiditate iste consequatur eligendi illum similique cumque, enim accusantium placeat veniam alias necessitatibus odio, temporibus nisi modi.</p>
+                </div>
+            </div>
+
+            <div class="space"></div>
+            <div class="flex-columns">
+                <button class="accordion">Section 3</button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis a, nobis aperiam corrupti cupiditate iste consequatur eligendi illum similique cumque, enim accusantium placeat veniam alias necessitatibus odio, temporibus nisi modi.</p>
+                </div>
+            </div> -->
+
+            <div class="space"></div>
+
+            <footer>
+                <div class="grid-footer">
+                    <div class="left-image">
+                        <a href="index.html"><img class="footer-image" src="images/GEMS Footer Icon.png"></a>
+                    </div>
+                    <div class="left">
+                        <p>Have any website design suggestions? Contact <a class="footer-link" href="mailto:hhsclubwebsites@gmail.com">hhsclubwebsites@gmail.com</a>.</p>
+                        <div class="icons">
+                            <p><a class="footer-link" href="https://icons8.com/icon/5vGNMY3d8lxd/gem-stone" target="_blank" rel="noopener noreferrer">Gemstone</a> icon by <a class="footer-link" href="https://icons8.com/" target="_blank" rel="noopener noreferrer">Icons8</a>.</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <!-- <div class="link-list"> -->
+                            <ul class="link-list">
+                                <li><a href="index.html" class="footer-list-link">HOME</a></li>
+                                <div class="footer-space"></div>
+                                <li><a href="events.html" class="footer-list-link">EVENTS</a></li>
+                                <div class="footer-space"></div>
+                                <li><a href="resources.html" class="footer-list-link">RESOURCES</a></li>
+                                <div class="footer-space"></div>
+                                <li><a href="https://hhsclubwebsites.github.io/clubdirectory/" class="footer-list-link">DIRECTORY</a></li>
+                            </ul>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </footer>
+
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+                }
+            </script>
+
+            <script>
+                var x = document.getElementById("top-nav");
+                console.log(x);
+                console.log(x.className);
+                document.addEventListener('click', event => {
+                    if(event.target.closest('#top-nav') === null){
+                        x.className = "nav-bar";
+                    };
+                })
+            </script>
+
+    </body>
+</html>
