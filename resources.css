@@ -470,6 +470,10 @@ header{
     .footer-image{
         width: 150px;
     }
+
+    .title{
+        font-size: clamp(3rem, 2vw + 1rem, 5rem);
+    }
 }
 
 
